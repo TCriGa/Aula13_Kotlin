@@ -5,13 +5,22 @@ exiba para o usuário apenas os números pares da lista.
 
 fun main() {
 
-    var listaN = arrayListOf<Int>(10)
+    var listaN = IntArray(10)
 
-    listaN.forEach { num ->
-        println("Informe o $listaN número")
+    for (num: Int in listaN.indices){
+        println("Informe o ${num + 1} número")
         listaN[num] = readln().toInt()
 
     }
+
+
+   for (num: Int in listaN.indices){
+       if (listaN[num] % 2 ==0){
+           println("São números pares ${listaN[num]}")
+       }
+   }
+
+
 }
 
 
