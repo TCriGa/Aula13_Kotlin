@@ -28,7 +28,7 @@ fun notasAlunos(numAlunos: DoubleArray) {
    }
 
     media = soma / notas
-    println(media)
+    println("A Média da turma é $media")
 
 }
 
