@@ -5,11 +5,33 @@ pessoa e quantos anos ela tinha em cada ano até o ano atual.
 
 fun main() {
     println("Por gentileza, informe o seu ano de nascimento: ")
-    var ano = readln().toInt()
+    var anoNascimento = readln().toInt()
 
-    var anoNascimento = intArrayOf(ano)
-}
-fun linhaDoTempo(anoNascimento: Array<Int>){
+    linhaDoTempo(anoNascimento)
 
-    
 }
+
+fun linhaDoTempo(anoNascimento: Int) {
+
+    var anoAtual = 2022
+
+    var idade = anoAtual - anoNascimento
+
+    println("|-----------------------Linha do tempo--------------------------------------|")
+
+    for (i in anoAtual downTo anoNascimento) {
+        var anosDeIdade = arrayListOf(idade)
+
+        println("No ano de $i sua idade é $idade")
+        idade--
+    }
+
+
+}
+
+
+
+
+
+
+
