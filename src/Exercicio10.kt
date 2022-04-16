@@ -5,10 +5,10 @@ Utilize o comando de repetição Do While
 fun main() {
     var i = 1
     var soma = 0
-    while (i in 1..15){
+    do {
         soma += i
         i++
-    }
+    }while (i <= 15)
 
     println("O valor da soma de 1 á 15 é $soma")
 }
